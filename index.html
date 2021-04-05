@@ -10,29 +10,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
     <div id="navbar">
-        <a href="#projects">Jump to projects</a> |
-        <a href="news.asp">News</a> |
-        <a href="contact.asp">Contact</a> |
-        <a href="about.asp">About</a>
+        <ul>
+            <!-- <li><a class="active" href="#home">Home</a></li> -->
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects-section">Work</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
     </div>
-
-    <div id="welcome-section">
-        <h1>Laurent Labine</h1>
-    </div>
-    <div id="projects">
+    <section id="welcome-section" class="welcome-section section">
+        <h1>Hey I am Mimic</h1>
+        <p>a web developer</p>
+    </section>
+    <section id="projects-section" class="projects-section section">
         <div class="project-tile">Project 1</div>
-        <a href="https://codepen.io/lazymarsupial/pen/WNwgXRv" target="_blank">My First project</a>
-        <a id="profile-link" href="https://gist.github.com/lazymarsupial" target="_blank">My Profile</a>
-    </div>
-    <script src="" async defer></script>
+        <a href="https://laurentlabine.github.io/fcc-tribute-page" target="_blank">A tribute to Richard Branson</a>
+        <a href="https://laurentlabine.github.io/fcc-survey-form/" target="_blank">A survey form</a>
+        <a href="https://laurentlabine.github.io/fcc-product-landing-page/" target="_blank">A product landing page</a>
+        <a href="https://laurentlabine.github.io/fcc-technical-documentation-page/" target="_blank">A technical documentation page</a>
+    </section>
+    <section id="contact-section" class="contact-section section">
+        <a id="profile-link" href="https://github.com/LaurentLabine" target="_blank">My Profile</a>
+    </section>
 </body>
 
 </html>
