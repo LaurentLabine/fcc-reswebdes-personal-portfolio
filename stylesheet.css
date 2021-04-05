@@ -1,0 +1,34 @@
+body {
+    background-color: pink;
+}
+
+#welcome-section {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*   background-color:green; */
+    /*   padding-top:0px;
+    margin-top:30px; */
+}
+
+@media only screen and (max-width: 600px) {
+    .projects {
+        background-color: lightblue;
+    }
+}
+
+#navbar {
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    list-style-type: none;
+}
+
+#projects {
+    margin-top: 1000px;
+}
