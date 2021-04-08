@@ -14,36 +14,83 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0d323cc40.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <div id="navbar">
+    <div id="navbar" class="nav">
         <ul>
             <!-- <li><a class="active" href="#home">Home</a></li> -->
             <li><a href="#welcome-section">About</a></li>
-            <li><a href="#projects-section">Work</a></li>
+            <li><a href="#projects">Work</a></li>
             <li><a href="#contact-section">Contact</a></li>
         </ul>
     </div>
-    <section id="welcome" class="welcome-section section">
+    <section id="welcome-section" class="welcome-section section">
         <h1>I am Laurent</h1>
         <h2>Welcome to my page</h2>
     </section>
     <section id="projects" class="projects-section section">
-        <h2 class="projects-section-header">These are some of my creations</h2>
-        <div class="projects-grid">
-            <a href="https://laurentlabine.github.io/fcc-tribute-page" target="_blank">A tribute to Richard Branson</a>
-            <a href="https://laurentlabine.github.io/fcc-survey-form/" target="_blank">A survey form</a>
-            <a href="https://laurentlabine.github.io/fcc-product-landing-page/" target="_blank">A product landing page</a>
-            <a href="https://laurentlabine.github.io/fcc-technical-documentation-page/" target="_blank">A technical documentation page</a>
-        </div>
+        <h2 class="projects-section-header">Some of my work</h2>
+        <table class="project-tile">
+            <tr>
+                <td>
+                    <a class="project-cell" href="https://laurentlabine.github.io/fcc-tribute-page/">
+                        <img class="project-img" src="https://raw.githubusercontent.com/LaurentLabine/personal-portfolio-thumbnails/main/tribute_richard_b.jpg" />
+                        <span id="tribute-overlay" class="project-overlay"></span>
+                        <span class="project-text">A Tribute Page</span>
+                    </a>
+                </td>
+                <td>
+                    <a class="project-cell" href="https://laurentlabine.github.io/fcc-survey-form/">
+                        <img class="project-img" src="https://raw.githubusercontent.com/LaurentLabine/personal-portfolio-thumbnails/main/survey_form.jpg" />
+                        <span id="survey-overlay" class="project-overlay"></span>
+                        <span class="project-text">A Survey Form</span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="project-cell" href="https://laurentlabine.github.io/fcc-product-landing-page/">
+                        <img class="project-img" src="https://raw.githubusercontent.com/LaurentLabine/personal-portfolio-thumbnails/main/product_landing_page.jpg" />
+                        <span id="landing-page-overlay" class="project-overlay"></span>
+                        <span class="project-text">A Product Landing Page</span>
+                    </a>
+                </td>
+                <td>
+                    <a class="project-cell" href="https://laurentlabine.github.io/fcc-technical-documentation-page/">
+                        <img class="project-img" src="https://raw.githubusercontent.com/LaurentLabine/personal-portfolio-thumbnails/main/Technical_documentation_page.jpg" />
+                        <span id="technical-documentation-overlay" class="project-overlay"></span>
+                        <span class="project-text">A Technical Documentation Page</span>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        </u>
     </section>
-    <div class="section-container">
-        <section id="contact" class="contact-section section">
-            <a id="profile-link" href="https://github.com/LaurentLabine" target="_blank">My Profile</a>
-        </section>
-    </div>
+    <section id="contact-section" class="contact-section section">
+        <h1>Get in touch!</h1>
+        <h2>Let's talk about what I can do for you!</h2>
+        <div class="contact-links">
+            <a id="fcc-profile-link" href="https://www.freecodecamp.org/laurent_labine" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i> Free Code Camp</a>
+            <a id="profile-link" href="https://github.com/LaurentLabine" target="_blank"><i class="fab fa-github-square"></i>gitHub</a>
+            <a id="linkedin-profile-link" href="https://www.linkedin.com/in/laurent-labine-a8a1222b/" target="_blank"><i class="fab fa-linkedin"></i>Linked in</a>
+            <a id="linkedin-profile-link" href="https://www.linkedin.com/in/laurent-labine-a8a1222b/" target="_blank"><i class="far fa-paper-plane"></i>Email</a>
+
+        </div>
+
+    </section>
+    <footer>
+        <p>
+            This portfolio was created as part of the Free Code Camp Responsive Web Design certification.
+        </p>
+        <p>
+            Satisfying the requirements stated <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage" target="_blank">here <i class="fab fa-free-code-camp"></i
+          ></a> and the source code is available at my github <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage" target="_blank">profile</i
+            ></a>
+        </p>
+    </footer>
 </body>
 
 </html>
