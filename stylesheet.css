@@ -28,7 +28,7 @@ body {
 
 .projects-section-header {
     padding: 3rem 0 2rem 0;
-    font-size: 50px;
+    font-size: 3em;
 }
 
 ul {
@@ -43,7 +43,6 @@ ul {
 
 .project-anchor {
     display: inline-block;
-    /* display: flex; */
 }
 
 .project-thumbnail {
@@ -59,7 +58,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 1em;
     text-decoration: none;
 }
 
@@ -142,7 +141,7 @@ table {
 
 .project-text {
     display: block;
-    padding: 0 30px;
+    padding: 0 2rem;
     box-sizing: border-box;
     position: absolute;
     width: 100%;
@@ -165,19 +164,23 @@ table {
 }
 
 @media (max-width: 9000px) {
-    #project-tiles li {
-        width: 25%;
+    #project-tiles td {
+        width: 50%;
     }
 }
 
-@media (max-width: 700px) {
-    #project-tiles li {
-        width: 33.33%;
+@media (max-width: 1200px) {
+    #project-tiles td {
+        width: 100%;
+        padding-top: 2rem;
+    }
+    .projects-section {
+        height: 200vh;
     }
 }
 
 @media (max-width: 550px) {
-    #project-tiles li {
+    #project-tiles td {
         width: 50%;
     }
 }
@@ -190,13 +193,10 @@ li a:hover:not(.active) {
     background-color: #111;
 }
 
-.section {
+.welcome-section {
     height: 100vh;
     position: relative;
     width: 100%;
-}
-
-.welcome-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -205,10 +205,15 @@ li a:hover:not(.active) {
 }
 
 .projects-section {
+    display: block;
     text-align: center;
+    padding: 2rem 0 10rem 0;
 }
 
 .contact-section {
+    height: 100vh;
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
