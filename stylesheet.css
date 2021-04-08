@@ -26,6 +26,11 @@ body {
     /* margin: 0 auto; */
 }
 
+.projects-section-header {
+    padding: 3rem 0 2rem 0;
+    font-size: 50px;
+}
+
 ul {
     list-style-type: none;
     overflow: hidden;
@@ -60,19 +65,14 @@ li a {
 
 table {
     border-spacing: 0;
-    padding-bottom: 2rem;
 }
 
-.project-tile {
+#project-tiles {
     max-width: 70vw;
-    margin: 0 auto;
-    /*center aligned*/
-    /* Remember to change it back to normal font size if have captions */
-    list-style: none;
-    background-color: #000;
+    margin: auto;
 }
 
-.project-tile td {
+#project-tiles td {
     display: inline-block;
     width: 50%;
     vertical-align: middle;
@@ -81,15 +81,10 @@ table {
 
 /* The wrapper for each item */
 
-.project-cell {
+.project-tile {
     display: block;
     position: relative;
     overflow: hidden;
-}
-
-.projects-section-header {
-    padding: 3rem 0 2rem 0;
-    font-size: 50px;
 }
 
 
@@ -98,12 +93,12 @@ table {
 .project-img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     transform: scale(1);
     transition: all 1s;
 }
 
-#project td:hover .project-img {
+#project-tiles td:hover .project-img {
     transform: scale(1.05);
 }
 
@@ -119,8 +114,6 @@ table {
     right: 0;
     margin: auto;
     opacity: 0;
-    filter: alpha(opacity=0);
-    /*For IE6 - IE8*/
     transition: all 0.6s;
 }
 
@@ -140,24 +133,25 @@ table {
     background: orange;
 }
 
-#rig td:hover .rig-overlay {
+#project-tiles td:hover .project-overlay {
     opacity: 0.8;
 }
 
 
 /* If have captions */
 
-.rig-text {
+.project-text {
     display: block;
-    padding: 0 2rem;
+    padding: 0 30px;
     box-sizing: border-box;
     position: absolute;
-    left: 0;
     width: 100%;
     text-align: center;
     text-transform: capitalize;
     font-size: 2rem;
+    font-weight: bold;
     font-family: 'Oswald', sans-serif;
+    font-weight: normal!important;
     top: 40%;
     color: white;
     opacity: 0;
@@ -165,25 +159,25 @@ table {
     transition: all .3s;
 }
 
-#rig td:hover .rig-text {
+#project-tiles td:hover .project-text {
     transform: translateY(0px);
     opacity: 0.9;
 }
 
 @media (max-width: 9000px) {
-    #rig li {
+    #project-tiles li {
         width: 25%;
     }
 }
 
 @media (max-width: 700px) {
-    #rig li {
+    #project-tiles li {
         width: 33.33%;
     }
 }
 
 @media (max-width: 550px) {
-    #rig li {
+    #project-tiles li {
         width: 50%;
     }
 }
