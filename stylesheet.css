@@ -174,15 +174,6 @@ table {
         width: 100%;
         padding-top: 2rem;
     }
-    .projects-section {
-        height: 200vh;
-    }
-}
-
-@media (max-width: 550px) {
-    #project-tiles td {
-        width: 50%;
-    }
 }
 
 h1 {
