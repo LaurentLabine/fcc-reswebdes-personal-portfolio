@@ -1,4 +1,4 @@
-# freeCodeCamp Responsive Web Design Projects - Project 5 - Build a Product Landing Page
+# freeCodeCamp Responsive Web Design Projects - Project 5 - Build a Personal Portfolio
 I built this project as part of freeCodeCamp's curriculum to learn and practice Responsive Web Design.
 
 It is accessible here: https://laurentlabine.github.io/fcc-reswebdes-personal-portfolio/
